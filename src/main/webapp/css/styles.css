@@ -1,0 +1,244 @@
+.skill-bars{
+    padding: 25px 30px;
+    width: 500px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+  }
+  .skill-bars .bar{
+    margin: 20px 0;
+  }
+  .skill-bars .bar:first-child{
+    margin-top: 0px;
+  }
+  .skill-bars .bar .info{
+    margin-bottom: 5px;
+  }
+  .skill-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
+  .skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #000000;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line.java span{
+    width: 90%;
+  }
+  .bar .progress-line.boot span{
+    width: 50%;
+  }
+  .bar .progress-line.mysql span{
+    width: 85%;
+  }
+  .bar .progress-line.hibernate span{
+    width: 80%;
+  }
+  .bar .progress-line.jsp span{
+    width: 70%;
+  }
+  .bar .progress-line.servlet span{
+    width: 75%;
+  }
+  .bar .progress-line.sap span{
+    width: 60%;
+  }
+  .progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+  }
+  .progress-line.java span::after{
+    content: "90%";
+  }
+  .progress-line.boot span::after{
+    content: "50%";
+  }
+  .progress-line.mysql span::after{
+    content: "85%";
+  }
+  .progress-line.hibernate span::after{
+    content: "80%";
+  }
+  .progress-line.jsp span::after{
+    content: "70%";
+  }
+  .progress-line.servlet span::after{
+    content: "75%";
+  }
+  .progress-line.sap span::after{
+    content: "60%";
+  }
+
+  @media only screen and (max-width: 500px) {
+    .skill-bars{
+      padding: 20px 35px;
+      width: 350px;
+      margin: 5px auto;
+      background: #fff;
+      box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      
+  }
+}
+ .container {
+
+    overflow-x:hidden;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 100%; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 1221px) {
+    .column {
+      width: 100%;
+    }
+    #message{
+      max-width: 30%;
+    }
+  
+  }
+ .projects{
+   margin-bottom: 10px;
+   padding: 10px;
+   box-sizing: border-box;
+   box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+   border-radius: 10px;
+ }
+ .education{
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+
+ }
+#mine{
+  border-radius: 10px;
+}
+/* .col-md-offset-1{
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  
+} */
+/* .typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.pro1{
+display: inline;
+} */
+
+.to-top {
+  background-color: #34495E;
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+ 
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}
+.to-top:hover{
+  color: white;
+}
